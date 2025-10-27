@@ -1,7 +1,7 @@
 from prefect import flow, task
 from datetime import date
 
-@flow
+@flow(log_prints=True)
 def test_flow():
     test_task()
 
